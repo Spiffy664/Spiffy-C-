@@ -1,0 +1,12 @@
+// pointer as an array iterator
+#include <iostream>
+using namespace std;
+int main(){
+
+	int arr[] = { 3, 4, 5, 6, 7, 8, 9, 0 }; // init array
+	int* arrpointer = &arr[0]; // array pointer = address of arr[0]
+	cout << *arrpointer << endl; // output the contents of arr[0]
+
+	arrpointer++; // increment the array pointer
+	cout << *arrpointer << endl; // output the element located at arr[1]
+}
